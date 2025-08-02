@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+
+    <link rel="stylesheet" href="cssweb/estilos.css">
+    <link href="cssmobile/mobile.css" rel="stylesheet" media="screen and (max-width:400px)">
+
+<header>
+<nav>
+<ul class="menu-principal3">
+<li class="inicio3"><a href="index.html">Home</a></li>
+<li class="inicio3"><a href="Discografia.html">Discografia</a></li>
+<li class="formm33">
+<a href="Formulario.html" class="activo">Formulario</a>
+<ul class="sub-secciones" id="sub-secciones">
+    <li><a href="#Formulario">Formulario</a></li>
+    <li><a href="#Datos-del-autor">Datos del autor</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+</header>
+
+<main>
+<h1 class="Formulario" id="Formulario">Formulario</h1>
+<h2 class="Formulario">Este Formulario esta creado para que los usuarios escriban mensajes, hagan consultas,
+ sugerencias,o opiniones.</h2>
+    
+<div class="form-container">
+<p>"Este espacio es para vos. Si tenés una idea, una canción favorita, una recomendación,
+    una sugerencia o simplemente algo que quieras decir relacionado con la pagina, o con Sade ¡me 
+    encantaría leerte! Todos están invitados a compartir, estoy acá para escucharte &hearts; &hearts;</p>
+    
+<form action="gracias.html" method="get">
+<label for="nombre">Tu nombre:</label>
+<input type="text" id="nombre" name="nombre" required
+oninvalid="this.setCustomValidity('Por favor completá tu nombre')" 
+oninput="this.setCustomValidity('')">
+
+<label for="Apellido">Tu Apellido:</label>
+<input type="text" id="Apellido" name="Apellido" required
+oninvalid="this.setCustomValidity('Por favor completá tu apellido')" 
+oninput="this.setCustomValidity('')">
+
+<label for="cancion">Canción favorita de Sade:</label>
+<input type="text" id="cancion" name="cancion" required
+oninvalid="this.setCustomValidity('Por favor completá tu canción favorita')" 
+  oninput="this.setCustomValidity('')">
+
+<label for="Interesesmusicales">Intereses musicales:</label>
+<select id="Interesesmusicales" name="Interesesmusicales" multiple required
+oninvalid="this.setCustomValidity('Por favor completá tu interes musical')" 
+oninput="this.setCustomValidity('')">
+<option value="Jazz">Jazz</option>
+<option value="Blues">Blues</option>
+<option value="Pop">Pop</option>
+<option value="Reggae">Reggae</option>
+<option value="Rock">Rock</option>
+<option value="Soul">Soul</option>
+<option value="Rap">Rap</option>
+<option value="Trap">Trap</option>
+<option value="Hiphop">Hiphop</option>
+<option value="Funk">Funk</option>
+<option value="Metal">Metal</option>
+<option value="Clasica">Clasica</option>
+<option value="Electronica">Electronica</option>
+<option value="Country">Country</option>
+<option value="Indie">Indie</option>
+<option value="Lofi">Lofi</option>
+<option value="Salsa">Salsa</option>
+<option value="Cumbia">Cumbia</option>
+<option value="Tango">Tango</option>
+<option value="Funk">Funk</option>
+<option value="Rnb">RB</option>
+<option value="Folklore">Folklore</option>
+<option value="techno">techno</option>
+<option value="house">house</option>
+<option value="Otro">Otro (Especificá abajo)</option>
+</select>
+<br><br>
+<label for="Otrogenero">Otro género musical</label>
+<input type="text" id="Otrogenero" name="Otrogenero" placeholder="Escribí acá tu estilo musical">
+
+<label for="mensaje">¿Querés dejarme una idea, sugerencia, recomendación o mensaje?</label>
+<textarea id="mensaje" name="mensaje" rows="5" placeholder="Tu mensaje acá "></textarea>
+
+<button type="submit">Enviar</button>
+</form>
+</div>
+</main>
+
+<footer>
+<div class="datosautor">
+<h2 class="Datos-del-autor" id="Datos-del-autor">Datos del autor</h2>
+<ul class="info">
+    <li class="datosmios">Nombre: Catalina Nicole Carraro Urbina</li>
+    <li class="datosmios">Edad: 19 años</li>
+    <li class="datosmios">Gmail de la escuela:<a href="mailto:catalina.carraro@davinci.edu.ar">Click y contactame!</a></li>
+    <li class="datosmios">Gmail de trabajo: <a href="mailto:carrarocatatrabajos@gmail.com">Click y contactame!</a></li>
+    <li class="datosmios">Carrera y materia: Diseño y Programación Web, Maquetado y Desarrollo Web</li>
+    <li class="datosmios">Profesora: Mabel García</li>
+    <li class="datosmios">Importante: Este sitio es una entrega para un TP de primer cuatrimestre de la Escuela Da Vinci, de primer año.</li>
+</ul>
+</div>
+</footer>
+
+
+</body>
+</html>
